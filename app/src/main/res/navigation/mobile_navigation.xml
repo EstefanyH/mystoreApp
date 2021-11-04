@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cli_perfil">
+
+    <fragment
+        android:id="@+id/nav_cli_perfil"
+        android:name="com.hache.mystoreapp.ui.cliente.PerfilCliFragment"
+        android:label="@string/menu_cli_perfil"
+        tools:layout="@layout/fragment_cli_perfil" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cli_producto"
+        android:name="com.hache.mystoreapp.ui.cliente.ProductoCliFragment"
+        android:label="@string/menu_cli_producto"
+        tools:layout="@layout/fragment_cli_producto" >
+
+        <action
+            android:id="@+id/nav_cli_detalle"
+            app:destination="@id/nav_cli_detalle"
+            app:popUpTo="@+id/fragment_cli_detalle"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cli_detalle"
+        android:name="com.hache.mystoreapp.ui.cliente.ProductoCliFragment"
+        android:label="@string/menu_cli_producto"
+        tools:layout="@layout/fragment_cli_detalle" >
+
+        <action
+            android:id="@+id/nav_cli_detalle"
+            app:destination="@id/nav_cli_producto"
+            app:popUpTo="@+id/fragment_cli_detalle"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cli_historial"
+        android:name="com.hache.mystoreapp.ui.cliente.HistorialCliFragment"
+        android:label="@string/menu_cli_historial"
+        tools:layout="@layout/fragment_cli_historial" />
+
+    <fragment
+        android:id="@+id/nav_rep_perfil"
+        android:name="com.hache.mystoreapp.ui.repartidor.PerfilRepFragment"
+        android:label="@string/menu_rep_perfil"
+        tools:layout="@layout/fragment_rep_perfil" />
+
+    <fragment
+        android:id="@+id/nav_rep_pedido"
+        android:name="com.hache.mystoreapp.ui.repartidor.PedidoRepFragment"
+        android:label="@string/menu_cli_producto"
+        tools:layout="@layout/fragment_cli_producto" >
+
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_rep_historial"
+        android:name="com.hache.mystoreapp.ui.repartidor.HistorialRepFragment"
+        android:label="@string/menu_cli_historial"
+        tools:layout="@layout/fragment_cli_historial" />
+
+    <fragment
+        android:id="@+id/nav_bod_perfil"
+        android:name="com.hache.mystoreapp.ui.bodega.PerfilBodFragment"
+        android:label="@string/menu_cli_producto"
+        tools:layout="@layout/fragment_cli_producto" />
+
+    <fragment
+        android:id="@+id/nav_bod_producto"
+        android:name="com.hache.mystoreapp.ui.bodega.ProductoBodFragment"
+        android:label="@string/menu_cli_historial"
+        tools:layout="@layout/fragment_cli_historial" />
+
+</navigation>

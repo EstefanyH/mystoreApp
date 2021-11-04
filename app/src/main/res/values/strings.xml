@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Mi Bodega</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Cerrrar Sesión</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_cli_perfil">PERFIL (CLIENTE)</string>
+    <string name="menu_cli_producto">PRODUCTO (CLIENTE)</string>
+    <string name="menu_cli_historial">HISTORIAL DE PEDIDOS (CLIENTE)</string>
+    <string name="menu_rep_perfil">PERFIL (REPARTIDOR)</string>
+    <string name="menu_rep_pedidos">PEDIDOS POR ENTREGAR (REPARTIDOR)</string>
+    <string name="menu_rep_historial">HISTORIAL DE ENTREGADOS (REPARTIDOR)</string>
+    <string name="menu_bod_perfil">PERFIL (BODEGA)</string>
+    <string name="menu_bod_producto">PRODUCTOS (BODEGA) </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="olvido_sec">Se olvidó contraseña</string>
+    <string name="registrate_sec">Registrate</string>
+
+    <string name="ingresar_btn">Ingresar</string>
+    <string name="clave_txt">Clave</string>
+    <string name="usuario_txt">Usuario</string>
+
+    <string name="bodega_per_lbl">BODEGA</string>
+    <string name="cliente_per_lbl">CLIENTE</string>
+    <string name="repartidor_per_lbl">DELIVERY</string>
+
+    <!-- Bodega -->
+    <string name="bob_txt_nombre">Nombre</string>
+    <string name="bob_txt_contacto">Contacto</string>
+    <string name="bob_txt_telefono">Telefono</string>
+    <string name="bob_txt_direccion">Dirección</string>
+    <string name="bob_txt_usuario">Usuario</string>
+    <string name="bob_txt_clave">Clave</string>
+    <string name="bob_txt_reclave">Repetir Clave</string>
+
+    <string name="bod_btn_registra">Crear Cuenta</string>
+    <!-- Cliente -->
+    <string name="cli_txt_nombre">Nombre</string>
+    <string name="cli_txt_telefono">Telefono</string>
+    <string name="cli_txt_direccion">Dirección</string>
+    <string name="cli_txt_usuario">Usuario</string>
+    <string name="cli_txt_clave">Clave</string>
+    <string name="cli_txt_reclave">Repetir Clave</string>
+
+    <string name="cli_btn_registra">Crear Cuenta</string>
+
+    <!-- Repartidor -->
+    <string name="rep_txt_nombre">Nombre</string>
+    <string name="rep_txt_telefono">Telefono</string>
+    <string name="rep_txt_tipovehiculo">Tipo de Vehiculo</string>
+    <string name="rep_txt_usuario">Usuario</string>
+    <string name="rep_txt_clave">Clave</string>
+    <string name="rep_txt_reclave">Repetir Clave</string>
+
+    <string name="rep_btn_registra">Crear Cuenta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
