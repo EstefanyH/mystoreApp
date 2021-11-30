@@ -19,7 +19,7 @@
         <entry key="app/src/main/res/layout/content_repartidor.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/layout/custorn_dialog.xml" value="0.18" />
         <entry key="app/src/main/res/layout/empty_tall_divider.xml" value="0.18704710144927536" />
-        <entry key="app/src/main/res/layout/fragment_bod_perfil.xml" value="0.11879432624113476" />
+        <entry key="app/src/main/res/layout/fragment_bod_perfil.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_bod_producto.xml" value="0.213768115942029" />
         <entry key="app/src/main/res/layout/fragment_cli_detalle.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/fragment_cli_historial.xml" value="0.33" />

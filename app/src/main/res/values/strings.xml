@@ -33,7 +33,8 @@
     <string name="repartidor_per_lbl">DELIVERY</string>
 
     <!-- Bodega -->
-    <string name="bob_txt_nombre">Nombre</string>
+    <string name="bob_txt_ruc">RUC</string>
+    <string name="bob_txt_nombre">Nombre Tienda</string>
     <string name="bob_txt_contacto">Contacto</string>
     <string name="bob_txt_telefono">Telefono</string>
     <string name="bob_txt_direccion">Dirección</string>

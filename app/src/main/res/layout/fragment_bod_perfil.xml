@@ -32,10 +32,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
+                    android:id="@+id/et_bob_ruc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bob_txt_ruc"
+                    android:maxLength="11"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
                     android:id="@+id/et_bob_nomTienda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_nombre"
+                    android:maxLength="20"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,6 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_contacto"
+                    android:maxLength="20"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,6 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_telefono"
+                    android:maxLength="9"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,6 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_direccion"
+                    android:maxLength="150"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,6 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_usuario"
+                    android:maxLength="8"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +108,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_clave"
+                    android:maxLength="8"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,15 +120,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/bob_txt_reclave"
+                    android:maxLength="8"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btn_bod_guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/bod_btn_registra"
                 android:layout_marginTop="10dp"
+                android:padding="15dp"
                 android:layout_marginBottom="50dp"
                 />
 

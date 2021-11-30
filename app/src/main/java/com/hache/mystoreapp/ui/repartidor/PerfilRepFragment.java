@@ -79,7 +79,7 @@ public class PerfilRepFragment extends BaseFragment  {
     }
 
     @OnClick(R.id.btn_rep_guardar)
-    public void guardar() {
+    public void onGuardar() {
         try{
             mListener.onLoadingShow();
             if(valida()) {

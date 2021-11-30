@@ -85,6 +85,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/cli_txt_clave"
                     android:maxLength="8"
+                    android:password="true"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,6 +98,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/cli_txt_reclave"
                     android:maxLength="8"
+                    android:password="true"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
