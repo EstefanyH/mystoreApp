@@ -58,7 +58,7 @@
     <string name="rep_txt_tipovehiculo">Tipo de Vehiculo</string>
     <string name="rep_txt_usuario">Usuario</string>
     <string name="rep_txt_clave">Clave</string>
-    <string name="rep_txt_reclave">Repetir Clave</string>
+    <string name="rep_txt_reclave">Confirmación de Clave</string>
 
     <string name="rep_btn_registra">Crear Cuenta</string>
 
@@ -74,4 +74,9 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+    <string name="loading">Cargando...</string>
+    <string name="msg_exito">Registro exitoso...</string>
+    <string name="msg_error">UPS!!!. Algo salió mal</string>
+    <string name="msg_error_servidor">UPS!!!. Ocurrió un error</string>
+    <string name="msg_error_internet">No hay conección a internet</string>
 </resources>

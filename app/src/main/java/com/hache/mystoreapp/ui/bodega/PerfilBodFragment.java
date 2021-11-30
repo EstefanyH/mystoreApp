@@ -25,7 +25,7 @@ public class PerfilBodFragment extends Fragment {
 
         binding = FragmentBodPerfilBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
+        setHasOptionsMenu(true);
         //final TextView textView = binding.textBobPerfil;
         /*perfilBodViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

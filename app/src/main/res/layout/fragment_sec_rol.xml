@@ -23,18 +23,27 @@
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@drawable/ic_bodega" />
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/lyt_bodega"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/size_txt_login"
-            android:text="@string/bodega_per_lbl" />
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_bodega" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/size_txt_login"
+                android:text="@string/bodega_per_lbl" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -45,19 +54,27 @@
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@drawable/ic_cliente" />
-
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/lyt_cliente"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/size_txt_login"
-            android:text="@string/cliente_per_lbl" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_cliente" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/size_txt_login"
+                android:text="@string/cliente_per_lbl" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -67,18 +84,26 @@
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@drawable/ic_repartidor" />
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/lyt_repartidor"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/size_txt_login"
-            android:text="@string/repartidor_per_lbl" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_repartidor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/size_txt_login"
+                android:text="@string/repartidor_per_lbl" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

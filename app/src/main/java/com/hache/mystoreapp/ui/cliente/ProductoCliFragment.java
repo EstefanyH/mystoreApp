@@ -50,7 +50,7 @@ public class ProductoCliFragment extends Fragment {
                         .build(); */
 
                 //NavHostFragment.findNavController(this).navigate(request);
-                mainActivity.irDetalle();
+                //mainActivity.irDetalle();
             }
         });
         return root;

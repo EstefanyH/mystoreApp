@@ -8,14 +8,16 @@
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/layout/activity_bodega.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/layout/activity_cliente.xml" value="0.24427083333333333" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14492753623188406" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_repartidor.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/layout/content_bodega.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/layout/content_cliente.xml" value="0.24427083333333333" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.11879432624113476" />
         <entry key="app/src/main/res/layout/content_repartidor.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/custorn_dialog.xml" value="0.18" />
         <entry key="app/src/main/res/layout/empty_tall_divider.xml" value="0.18704710144927536" />
         <entry key="app/src/main/res/layout/fragment_bod_perfil.xml" value="0.11879432624113476" />
         <entry key="app/src/main/res/layout/fragment_bod_producto.xml" value="0.213768115942029" />

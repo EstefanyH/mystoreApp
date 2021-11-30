@@ -31,10 +31,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
-                    android:id="@+id/et_cli_nomTienda"
+                    android:id="@+id/et_rep_nom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_txt_nombre"
+                    android:maxLength="30"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,32 +44,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
-                    android:id="@+id/et_cli_telefono"
+                    android:id="@+id/et_rep_telefono"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_txt_telefono"
+                    android:maxLength="10"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
-                    android:id="@+id/et_cli_direccion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/rep_txt_tipovehiculo"
-                    android:singleLine="true"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <EditText
-                    android:id="@+id/et_cli_nomUsuario"
+                    android:id="@+id/et_rep_nomUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_txt_usuario"
+                    android:maxLength="15"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,10 +69,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
-                    android:id="@+id/et_cli_clave"
+                    android:id="@+id/et_rep_clave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_txt_clave"
+                    android:maxLength="8"
+                    android:password="true"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,19 +82,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <EditText
-                    android:id="@+id/et_cli_reClave"
+                    android:id="@+id/et_rep_reClave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_txt_reclave"
+                    android:maxLength="8"
+                    android:password="true"
                     android:singleLine="true"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btn_rep_guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|bottom"
                 android:text="@string/bod_btn_registra"
                 android:layout_marginTop="10dp"
+                android:padding="15dp"
                 android:layout_marginBottom="50dp"
                 />
 
