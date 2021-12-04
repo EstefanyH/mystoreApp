@@ -5,6 +5,8 @@ public class Producto {
     private String tienda;
     private String detalle;
     private String costo;
+    private String fecha;
+    private String estado;
 
     public String getNombre() {
         return nombre;
@@ -36,5 +38,21 @@ public class Producto {
 
     public void setCosto(String costo) {
         this.costo = costo;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

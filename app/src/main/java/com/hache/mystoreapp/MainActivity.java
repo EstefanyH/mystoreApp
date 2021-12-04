@@ -37,7 +37,7 @@ import com.hache.mystoreapp.ui.seguridad.RolSecFragment;
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener, RolSecFragment.OnFragmentInteractionListener,
         PerfilRepFragment.OnFragmentInteractionListener, PerfilCliFragment.OnFragmentInteractionListener,
-        ProductoCliFragment.OnFragmentInteractionListener {
+        ProductoCliFragment.OnFragmentInteractionListener, HistorialCliFragment.OnFragmentInteractionListener {
 
     Menu menu = null;
     Fragment fragment = null;

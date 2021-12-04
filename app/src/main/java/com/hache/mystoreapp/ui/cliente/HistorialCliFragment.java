@@ -4,59 +4,77 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
+import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hache.mystoreapp.R;
-import com.hache.mystoreapp.bean.HistorialPedido;
-import com.hache.mystoreapp.databinding.FragmentCliHistorialBinding;
+import com.hache.mystoreapp.adapter.HistorialCliAdapter;
+import com.hache.mystoreapp.bean.Producto;
+import com.hache.mystoreapp.util.BaseFragment;
 
-import java.util.List;
+import java.util.ArrayList;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
-//import butterknife.BindView;
+public class HistorialCliFragment extends BaseFragment implements HistorialCliAdapter.ItemClickListener {
 
+    private Unbinder unbinder = null;
+    private OnFragmentInteractionListener mListener = null;
+    HistorialCliAdapter adapter;
 
-public class HistorialCliFragment extends Fragment {
-
-    private HistorialCliViewModel historialCliViewModel;
-    private FragmentCliHistorialBinding binding;
-
-    //@BindView(R.id.rv_cli_historial)
-    private RecyclerView rv_lista;
-
-    //HistorialCliAdapter mAdapter;
-    List<HistorialPedido> lista;
+    @BindView(R.id.tv_cli_hs_empty)
+    TextView tv_cli_hs_empy;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        historialCliViewModel =
-                new ViewModelProvider(this).get(HistorialCliViewModel.class);
+        View view = inflater.inflate(R.layout.fragment_cli_historial, container, false);
+        unbinder = ButterKnife.bind(this, view);
 
-        binding = FragmentCliHistorialBinding.inflate(inflater, container, false);
-       View root = binding.getRoot();
-/*
-        lista = new ArrayList<>();
+        setHasOptionsMenu(true);
+        mListener = (OnFragmentInteractionListener) getActivity();
 
-        rv_lista.setLayoutManager(new LinearLayoutManager(getContext()));
-        mAdapter = new HistorialCliAdapter(getData());
-        rv_lista.setAdapter(mAdapter); */
+        if (mListener != null) {
+            mListener.setActionBarTitle("Historial de Pedidos");
+        }
 
-        return root;
-    }
+        ArrayList<Producto> items = new ArrayList<>();
+        Producto bean ;
+        bean = new Producto();
+        bean.setNombre("Jamonada");
+        bean.setTienda("Oscar Villar");
+        bean.setDetalle("500 g");
+        bean.setCosto("S/. 40.00");
+        bean.setFecha("18/11/2018");
+        bean.setEstado("Pendiente");
 
-    private List<HistorialPedido> getData(){
-        HistorialPedido bean = new HistorialPedido();
-        lista.add(bean);
-        return lista;
+        items.add(bean);
+
+        RecyclerView recyclerView = (RecyclerView) view.findViewById (R.id.rv_cli_historial);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter = new HistorialCliAdapter(getContext(), items);
+        adapter.setClickListener(this);
+        recyclerView.setAdapter(adapter);
+
+        return view;
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public void onItemClick(View view, int position) {
+
+    }
+
+    @Override
+    public void onEmpty() {
+        tv_cli_hs_empy.setVisibility(View.VISIBLE);
+    }
+
+
+    public interface OnFragmentInteractionListener {
+        void setActionBarTitle(String title);
+        void onLoadingShow();
+        void onLoadingHide();
     }
 }

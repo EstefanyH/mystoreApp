@@ -7,15 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.cliente.ProductoCliFragment">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_cli_producto"/>
+        android:id="@+id/rv_cli_producto"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_emptyTextView"
+        android:id="@+id/tv_cli_empty"
         android:text="@string/lista_vacia"
         android:textSize="20sp"
         android:visibility="gone"
