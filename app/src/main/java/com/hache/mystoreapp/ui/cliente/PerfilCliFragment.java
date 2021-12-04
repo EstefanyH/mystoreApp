@@ -6,24 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.hache.mystoreapp.R;
-import com.hache.mystoreapp.databinding.FragmentCliPerfilBinding;
 import com.hache.mystoreapp.service.VolleyS;
 import com.hache.mystoreapp.ui.repartidor.PerfilRepFragment;
 import com.hache.mystoreapp.util.BaseFragment;
-import com.hache.mystoreapp.util.Config;
+import com.hache.mystoreapp.util.Apiconfig;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,7 +30,7 @@ import butterknife.Unbinder;
 public class PerfilCliFragment extends BaseFragment {
 
     private Unbinder unbinder = null;
-    private PerfilRepFragment.OnFragmentInteractionListener mListener = null;
+    private OnFragmentInteractionListener mListener = null;
     private VolleyS volley;
 
     @BindView(R.id.et_cli_nom)
@@ -66,7 +59,7 @@ public class PerfilCliFragment extends BaseFragment {
         unbinder = ButterKnife.bind(this, view);
 
         setHasOptionsMenu(true);
-        mListener = (PerfilRepFragment.OnFragmentInteractionListener) getActivity();
+        mListener = (OnFragmentInteractionListener) getActivity();
 
         volley = VolleyS.getInstance(getActivity().getApplicationContext());
         fRequestQueue = volley.getRequestQueue();
@@ -89,7 +82,7 @@ public class PerfilCliFragment extends BaseFragment {
         try{
             mListener.onLoadingShow();
             if(valida()) {
-                String url = Config.NuevoCliente;
+                String url = Apiconfig.NuevoCliente;
 
                 JSONObject json = new JSONObject();
                 json.put("idCliente", 0);

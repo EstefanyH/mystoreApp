@@ -6,25 +6,27 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="action_close">Cerrrar Sesión</string>
+    <string name="action_close">Cerrar Sesión</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string name="menu_cli_perfil">PERFIL (CLIENTE)</string>
-    <string name="menu_cli_producto">PRODUCTO (CLIENTE)</string>
-    <string name="menu_cli_historial">HISTORIAL DE PEDIDOS (CLIENTE)</string>
-    <string name="menu_rep_perfil">PERFIL (REPARTIDOR)</string>
-    <string name="menu_rep_pedidos">PEDIDOS POR ENTREGAR (REPARTIDOR)</string>
-    <string name="menu_rep_historial">HISTORIAL DE ENTREGADOS (REPARTIDOR)</string>
-    <string name="menu_bod_perfil">PERFIL (BODEGA)</string>
-    <string name="menu_bod_producto">PRODUCTOS (BODEGA) </string>
+    <string name="menu_cli_perfil">Perfil (CLIENTE)</string>
+    <string name="menu_cli_producto">Producto (CLIENTE)</string>
+    <string name="menu_cli_historial">Historial de Pedidos (CLIENTE)</string>
+    <string name="menu_rep_perfil">Perfil (REPARTIDOR)</string>
+    <string name="menu_rep_pedidos">Pedidos por Entregar (REPARTIDOR)</string>
+    <string name="menu_rep_historial">Historial de Entregados (REPARTIDOR)</string>
+    <string name="menu_bod_perfil">Perfil (BODEGA)</string>
+    <string name="menu_bod_producto">Producto (BODEGA) </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="olvido_sec">Se olvidó contraseña</string>
     <string name="registrate_sec">Registrate</string>
 
-    <string name="ingresar_btn">Ingresar</string>
+    <string name="ingresar_btn">INGRESAR</string>
+    <string name="ver_btn">VER</string>
+
     <string name="clave_txt">Clave</string>
     <string name="usuario_txt">Usuario</string>
 
@@ -62,6 +64,7 @@
     <string name="rep_txt_reclave">Confirmación de Clave</string>
 
     <string name="rep_btn_registra">Crear Cuenta</string>
+    <string name="cli_txt_busqueda">Busqueda....</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -75,6 +78,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
+    <!-- Mensajes -->
+    <string name="lista_vacia">No hay resultados de busqueda</string>
     <string name="loading">Cargando...</string>
     <string name="msg_exito">Registro exitoso...</string>
     <string name="msg_error">UPS!!!. Algo salió mal</string>

@@ -6,29 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
 import com.hache.mystoreapp.R;
-import com.hache.mystoreapp.bean.Repartidor;
 import com.hache.mystoreapp.service.VolleyS;
 import com.hache.mystoreapp.util.BaseFragment;
-import com.hache.mystoreapp.util.Config;
+import com.hache.mystoreapp.util.Apiconfig;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -83,7 +71,7 @@ public class PerfilRepFragment extends BaseFragment  {
         try{
             mListener.onLoadingShow();
             if(valida()) {
-                String url = Config.NuevoRepartidor;
+                String url = Apiconfig.NuevoRepartidor;
                 JSONObject json = new JSONObject();
                 json.put("idRepartidor", 0);
                 json.put("nombreRepartidor", etNombre.getText().toString().trim());
